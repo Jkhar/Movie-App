@@ -55,8 +55,12 @@ form.addEventListener('submit' , event =>{
         search.value ='';
     }
     else {
-        window.location.reload();
+        reloadMainPage();
     }
 })
+
+const reloadMainPage = () => {
+    window.location.reload();
+}
 
 getMovies(API_URL);
